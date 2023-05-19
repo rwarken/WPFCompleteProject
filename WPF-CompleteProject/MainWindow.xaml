@@ -24,52 +24,54 @@
             Grid.Row="1"
             Grid.Column="1"
             VerticalAlignment="Center">
-        <Label
-            x:Name="LabelEmployees"
-            Content="Employee(s): 0"
-            FontSize="20"
-            FontWeight="Bold"
-            Margin="10" />
-        <Label
-            x:Name="LabelEmpId"
-            Content="Emp Id:"
-            FontWeight="Bold"
-            VerticalAlignment="Center"
-            Margin="10,10,0,10" />
-        <TextBox
-            x:Name="TextBoxEmpId"
-            Width="100"
-            VerticalAlignment="Center"
-            Margin="10,10,0,10" />
-        <Label
-            x:Name="LabelEmpName"
-            Content="Emp Name:"
-            FontWeight="Bold"
-            VerticalAlignment="Center"
-            Margin="10,10,0,10" />
-        <TextBox
-            x:Name="TextBoxEmpName"
-            Width="100"
-            VerticalAlignment="Center"
-            Margin="10,10,0,10" />
-        <Button
-            x:Name="ButtonGetEmployees"
-            Content="Get Employees"
-            Width="100"
-            VerticalAlignment="Center"
-            Margin="70,10,0,10" Click="ButtonGetEmployees_Click" />
-        <Button
-            x:Name="ButtonExit"
-            Content="Exit"
-            Width="100"
-            VerticalAlignment="Center"
-            Margin="10,10,10,10" Click="ButtonExit_Click" />
+            <Label
+                x:Name="LabelEmployees"
+                Content="Employee(s): 0"
+                FontSize="20"
+                FontWeight="Bold"
+                Margin="10" />
+            <Label
+                x:Name="LabelEmpId"
+                Content="Emp Id:"
+                FontWeight="Bold"
+                VerticalAlignment="Center"
+                Margin="10,10,0,10" />
+            <TextBox
+                x:Name="TextBoxEmpId"
+                Width="100"
+                VerticalAlignment="Center"
+                Margin="10,10,0,10" />
+            <Label
+                x:Name="LabelEmpName"
+                Content="Emp Name:"
+                FontWeight="Bold"
+                VerticalAlignment="Center"
+                Margin="10,10,0,10" />
+            <TextBox
+                x:Name="TextBoxEmpName"
+                Width="100"
+                VerticalAlignment="Center"
+                Margin="10,10,0,10" />
+            <Button
+                x:Name="ButtonGetEmployees"
+                Content="Get Employees"
+                Width="100"
+                VerticalAlignment="Center"
+                Margin="70,10,0,10" Click="ButtonGetEmployees_Click" />
+            <Button
+                x:Name="ButtonExit"
+                Content="Exit"
+                Width="100"
+                VerticalAlignment="Center"
+                Margin="10,10,10,10" Click="ButtonExit_Click" />
         </StackPanel>
         <DataGrid
             x:Name="DataGridEmployees"
             Grid.Column="1"
             Grid.Row="2"
             Grid.ColumnSpan="3"
-            Margin="10" />
+            Margin="10"
+            IsReadOnly="True"
+            CanUserAddRows="False" />
     </Grid>
 </Window>
